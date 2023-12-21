@@ -68,7 +68,8 @@ body {
     justify-content: space-between;
     margin-bottom: 4px;
   }
-  .time-duration__starting, .time-duration__ending {
+
+  .time-duration__current-time, .time-duration__song-time {
     color: var(--text-color);
     font-size: 10px;
   }
@@ -76,13 +77,18 @@ body {
   .music-duration__bar-container {
     background-color: var(--name-song-text-color);
     border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .bar-container__progress-bar {
     background-color: var(--primary-color);
+    height: 4px;
     border-radius: 10px;
-    height: 4px; 
-    width: 50%;
+    max-width: 100%;
+    width: 0;
   }
 }
 
@@ -106,5 +112,15 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .previous-button:hover , .next-button:hover {
+    cursor: pointer;
+    opacity: 0.5;
   }
 }
