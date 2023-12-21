@@ -5,6 +5,7 @@
   --border-radius: 20px;
   --text-color: #4D5562;
   --name-song-text-color: #E5E7EB;
+  --music-player-bg: #121826a6;
 }
 
 * {
@@ -31,7 +32,7 @@ body {
 
 #music-player {
   width: 360px;
-  background-color: #212936;
+  background-color: var(--music-player-bg);
   padding: 20px;
   border-radius: var(--border-radius);
 }
