@@ -4,9 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Music Player</title>
 </head>
 <body>
-  <h1>Music Player</h1>
+  <div id="container">
+    <div id="music-player">
+      <div class="album">
+        <img src="./assets/cover-1.png" alt="Album">
+        <div class="name-song">Lost in the City Lights</div>
+        <div class="name-artist">Cosmo Sheldrake</div>
+      </div>
+
+
+      <div class="music-duration">
+        <div class="music-duration__time-duration">
+          <span class="time-duration__starting">02:23</span>
+          <span class="time-duration__ending">03:15</span>
+        </div>
+        <div class="music-duration__bar-container">
+          <div class="bar-container__progress-bar">
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="music-actions">
+        <div class="previous-button">
+          <img src="./assets/Stop_and_play_fill-1.svg" alt="">
+        </div>
+        <div class="play-button">
+          <img src="./assets/Play_fill.svg" alt="">
+        </div>
+        <div class="next-button">
+          <img src="./assets/Stop_and_play_fill_reverse.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
