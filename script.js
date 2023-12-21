@@ -60,6 +60,7 @@ nextButtonElement.addEventListener('click', () => {
 });
 
 processBarContainerElement.addEventListener('click', adjustPlayTime);
+processBarElement.addEventListener('click', adjustPlayTime);
 
 function adjustPlayTime(event) {
   const song = songList[currentSongIndex].audio;
